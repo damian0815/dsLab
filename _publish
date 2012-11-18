@@ -1,0 +1,11 @@
+#!/bin/bash
+
+dir=`dirname $0`
+if [ ! -h $dir/_publishDir ]; then
+	echo "$dir/_publishDir doesn't exist: please create a symlink to target site root"
+	exit
+fi
+
+blogofile build -s $dir
+rsync -a $dir/_site/ $dir/_publishDir
+
