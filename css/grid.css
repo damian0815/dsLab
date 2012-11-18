@@ -23,7 +23,8 @@ body {
 .container_12 {
     margin-left: auto;
     margin-right: auto;
-    width: 960px;
+   /* width: 960px;*/
+	width: 100%;
 }
 
 /* Grid >> Global
@@ -41,7 +42,10 @@ body {
 .grid_9,
 .grid_10,
 .grid_11,
-.grid_12 {
+.grid_12,
+.width_100,
+.width_66,
+.width_33 {
     display:inline;
     float: left;
     position: relative;
@@ -98,6 +102,11 @@ body {
     width:300px;
 }
 
+.container_12 .width_33 {
+	width:30%;
+	float:right;
+}
+
 .container_12 .grid_5 {
     width:380px;
 }
@@ -114,6 +123,10 @@ body {
     width:620px;
 }
 
+.container_12 .width_66 {
+	width: 65%;
+}
+
 .container_12 .grid_9 {
     width:700px;
 }
@@ -128,6 +141,9 @@ body {
 
 .container_12 .grid_12 {
     width:940px;
+}
+.container_12 .width_100 {
+	width:100%;
 }
 
 

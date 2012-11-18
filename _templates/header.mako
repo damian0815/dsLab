@@ -13,8 +13,9 @@ document.write('<a href="mailto:&#111;&#102;&#102;&#105;&#99;&#101;&#64;&#100;&#
 <noscript>email office @ this website</noscript>
 <br/>
 </div>
-<h1><a href='http://damianstewart.com'>Damian Stewart</a></h1>
-  <div id="navigation" class="grid_12">
+   <h1><a href="${bf.util.site_path_helper()}">${bf.config.blog.name}</a></h1>
+## <h1><a href='http://damianstewart.com'>Damian Stewart</a></h1>
+  <div id="navigation" class="width_100">
 <%
 def nav_class(path):
    render_path = bf.template_context.render_path.rsplit("/index.html")[0]

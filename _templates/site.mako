@@ -16,10 +16,10 @@ ${self.head()}
       <div id="main" role="main">
         <div id="main_block">
           ${self.header()}
-          <div id="prose_block" class="grid_8">
+          <div id="prose_block" class="width_66">
             ${next.body()}
           </div>
-          <div id="sidebar" class="grid_4">
+          <div id="sidebar" class="width_33">
             ${self.sidebar()}
           </div>
           <div class="clear"></div>

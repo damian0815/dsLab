@@ -1,7 +1,7 @@
 <% import datetime %>
 <footer>
-  <div id="footer" class="grid_12">
-    <div class="grid_8">
+  <div id="footer" class="width_100">
+    <div class="width_66">
       <p>
         <a href="${bf.util.site_path_helper(bf.config.blog.path,'feed','index.xml')}">RSS</a>
         % if bf.config.blog.disqus.enabled:
@@ -9,7 +9,7 @@
         % endif
       </p>
     </div>
-    <div class="grid_4" id="credits">
+    <div class="width_33" id="credits">
       <p>
         Copyright ${datetime.datetime.now().year}
         ${bf.config.site.author}

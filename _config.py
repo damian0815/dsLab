@@ -39,11 +39,11 @@ blog.enabled = True
 #  and you set blog_path to "/blog" your full blog URL would be
 #  "http://www.yoursite.com/~ryan/blog"
 #  Leave blank "" to set to the root of site_url
-blog.path = "blog"
+blog.path = "/blog"
 
 ## blog_name -- Your Blog's name.
 # This is used repeatedly in default blog templates
-blog.name = "Damian Stewart - Labs"
+blog.name = u"Damian Stewart — Labs"
 
 ## HTML5 example customizes the blog templates.
 ## Delete this setting to use the default ones instead.
@@ -51,10 +51,10 @@ blog.template_path = "_templates/blog"
 
 ## blog_description -- A short one line description of the blog
 # used in the RSS/Atom feeds.
-blog.description = "Documenting small experiments and works in progress by Damian Stewart"
+blog.description = "Documenting research, experiments and works in progress by Damian Stewart"
 
 ## blog_timezone -- the timezone that you normally write your blog posts from
-blog.timezone = "CET"
+blog.timezone = "Europe/Vienna"
 
 ## blog_googleanaltics_id -- enable Google Analytics tracking
 ## TODO: move to plugin/filter?
@@ -69,3 +69,7 @@ filters.markdown.extensions.footnotes.enabled = True
 filters.markdown.extensions.fenced_code.enabled = True
 filters.markdown.extensions.headerid.enabled = True
 filters.markdown.extensions.tables.enabled = True
+
+import locale
+locale.setlocale(locale.LC_ALL, "en_GB.UTF-8")
+

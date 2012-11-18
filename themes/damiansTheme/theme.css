@@ -15,42 +15,37 @@ html {
 }
 
 body {
-    background: #000;
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(12,13,13)),
-        color-stop(0.6, rgb(30,46,87))
-    );
-    background-image: -moz-linear-gradient(
-        center bottom,
-        rgb(12,13,13) 0%,
-        rgb(30,46,87) 60%
-    );
-    margin: 0;
+   margin: 0;
     padding: 0;
 	font-family: Fontin, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-/*    font-family: "Droid Sans", helvetica, arial, sans-serif; */
+	background-color : #F9F9F9;
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
     height: 100%;
-    background-repeat: no-repeat;
-    background-attachment:fixed;
+
+	font-size: 18px;
+	line-height: 1.2;
+	color: #333;
+	margin: 1em;
+	margin-right: 0;
 }
+
 
 header, nav, article, aside, footer, hgroup, section {
     display: block;
 }
 
+footer, nav {
+	margin-right: 1em;
+}
+
 div#main_block {
     /* background-color: #ffffff; */
-    background: #ebe8d9;
-    font-size: 15px;
+/*    background: #ebe8d9;*/
     min-height: 700px;
 }
 
 a {
-    color: #6C8CD5;
+    color: #668;
     text-decoration: none;
 }
 
@@ -69,25 +64,23 @@ li, ol {
 div#header {
     height: 100px;
     color: #D0D3D5;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    /*font-family: Georgia, "Times New Roman", Times, serif;*/
     /* background: -moz-linear-gradient(-90deg, #AD2E3D, #972431) repeat scroll 0 0 */
 }
 
 div#header h1, div#header h2 {
-    font-size: 40px;
     margin: 0px 0px -8px 10px;
     font-weight: normal;
-    color: #ffffff;
+    color: #333;
 }
 
 div#header h2 {
-    font-size: 20px;
     margin: 10px 0px -8px 20px;
-    color: #7C9CE5; 
+    color: #333; 
 }
 
 div#header a {
-    color: #ffffff;
+    color: #668;
     text-decoration: none;
 }
 
@@ -96,10 +89,11 @@ div#header a {
 /* Navigation */
 /****************************/
 div#navigation {
-    border-top: 1px solid #fff;
-    background: #2A4480;
+    /*border-top: 1px solid #fff;*/
+    /*background: #2A4480;*/
     width: 100%;
     margin: 0;
+	font-size: 2em;
 }
 div#navigation * {
     margin: 0;
@@ -117,12 +111,11 @@ div#navigation a {
     display: block;
     text-decoration: none;
     font-weight: normal;
-    color: #ffffff;
-    font-size: 21px;
+    color: #668;
 }
 div#navigation a:hover,
 div#navigation a.selected {
-    background: #3A5490;
+	background : #DDDDDD;
 }
 
 
@@ -130,23 +123,17 @@ div#navigation a.selected {
 /* Footer */
 /****************************/
 div#footer {
-    color: #fff;
-    border-top: 1px solid #fff;
-    background: #2A2A2A;
+    color: #333;
+    border-top: 1px solid #000;
+/*    background: #2A2A2A;*/
     width: 100%;
     margin: 0;
-    -webkit-border-bottom-right-radius: 10px;
-    -webkit-border-bottom-left-radius: 10px;
-    -moz-border-radius-bottomright: 10px;
-    -moz-border-radius-bottomleft: 10px;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
     font-size: 0.8em;
     float: right;
 }
 
 div#footer a{
-    color: #fff;
+    color: #333;
 }
 
 div#credits p {
@@ -167,11 +154,11 @@ div#credits p {
 }
 
 .post_prose a:hover {
-    color:#5681E5;
-    background-color: #eaf4ff;
+    color:#668;
+/*    background-color: #eaf4ff;*/
 }
 .post_prose a {
-    color:#4671D5;
+    color:#668;
     text-decoration:none;
 }
 
@@ -182,6 +169,7 @@ div#credits p {
 }
 .blog_post {
     margin-bottom: 10px;
+	margin-left: 0.7em;
 }
 
 .blog_post article {
@@ -200,6 +188,7 @@ div#credits p {
     border-top-right-radius: 10px;
     color: #eee;
     height: 40px;
+	margin-left: 1em;
 }
 .blog_post article footer {
     -webkit-border-bottom-left-radius: 10px;
@@ -218,11 +207,11 @@ div#credits p {
     color: #444;
 }
 .blog_post .left{
-    margin-left: 10px;
+    margin-left: 1em;
     float: left;
 }
 .blog_post .right{
-    margin-right: 10px;
+    margin-right: 1em;
     float: right;
 }
 
@@ -235,7 +224,7 @@ div#credits p {
     text-align: right;
     width: 50px;
     height: 40px;
-    font-size: 24px;
+	font-size: 1.5em;
     margin-right: 12px;
     padding-right: 10px;
     background-color: #06266F;
@@ -251,7 +240,7 @@ div#credits p {
 }
 
 .blog_post header .year {
-    font-size: 15px;
+	font-size: 0.8em;
     text-align: center;
     width: 40px;
     line-height: 16px;
@@ -265,7 +254,7 @@ div#credits p {
 }
 
 .blog_post header .day {
-    font-size: 18px;
+	font-size: 1em;
     height: 24px;
     text-align: center;
     float: right;
@@ -274,7 +263,7 @@ div#credits p {
 
 .blog_post header .month {
     display:block;
-    font-size:12px;
+	font-size:0.6em;
     height:16px;
     font-family: monospace;
     margin-top: -8px;
@@ -288,7 +277,7 @@ div#credits p {
     overflow: hidden;
 }
 .blog_post_title a {
-    color: #fff;
+/*    color: #668;*/
     float: left;
     margin-top: 4px;
 }
@@ -301,15 +290,14 @@ div#credits p {
     background: #e3e3e3;
 }
 .post_prose {
-    margin-left: 10px;
 }
 .post_prose a:hover {
-    color:#5681E5;
-    background-color: #eaf4ff;
+    color:#668;
+/*    background-color: #eaf4ff;*/
 }
 
 .post_prose a {
-    color:#4671D5;
+    color:#668;
     text-decoration:none;
 }
 
@@ -331,12 +319,12 @@ aside {
     z-index: 1;
 }
 aside h1, footer h1 {
-    font-size: 18px;
+	font-size: 1em;
     font-weight: normal;
     line-height: 28px;
     height: 28px;
     margin-bottom: 10px;
-    color: #fff;
+    color: #333;
     padding: 0 10px;
     border: 1px solid #aaa;
     border-radius: 10px;
@@ -428,3 +416,45 @@ aside li {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#DDD', endColorstr='#6C8CD5',GradientType=0 ); /* IE6-9 */
     background: linear-gradient(top, #DDD 8%,#6C8CD5 92%); /* W3C */
 }
+
+
+.header
+{
+/*	text-transform: uppercase;*/
+	background: none;	
+	margin: 1em;
+	margin-top: 0;
+	font-family: Delicious, sans-serif;
+}
+
+
+.header h1 a
+{
+	color: #221;
+}
+
+.header h1 a:visited
+{
+	color: #221;
+}
+
+.header h1
+{
+	margin-top: 0em;
+	line-height: 1;
+	margin-bottom: -0.2em;
+	font-size: 5em;
+}
+
+.header .contact
+{
+	float: right;
+	margin-top: 0.6em;
+	margin-right: 1.0em;
+	text-transform: none;
+	background: none;
+	font-size: 1.1em;
+	text-align: right;
+}
+
+
