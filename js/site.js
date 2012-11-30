@@ -1,9 +1,9 @@
 function twitterSidebar(){
   jQuery("#tweets").tweet({
-    avatar_size: 32,
+	username: "damian0815",
+    avatar_size: 48,
     count: 5,
-    query: "example",
-    loading_text: "searching twitter..."
+    loading_text: "loading tweets..."
   });  
 }
 
